@@ -1,0 +1,44 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.image-container {
+    /* Centraliza a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    /* Define o tamanho da imagem */
+    width: 300px;
+    height: auto;
+
+    /* Adiciona o efeito de flutuação */
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Animação de flutuação */
+@keyframes floating {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
